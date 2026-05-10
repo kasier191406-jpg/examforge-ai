@@ -16,7 +16,11 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
 
-    backend_cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    backend_cors_origins: list[str] = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://examforge-ai-ebon.vercel.app",
+]
 
     default_admin_username: str = "admin"
     default_admin_password: str = "Admin@123"
